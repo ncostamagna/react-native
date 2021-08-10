@@ -25,7 +25,13 @@ cd miProyecto
 npm start
 ```
 
-Debemos descargarnos Android Studio y instalamos un SDK <br />
-Debemos crearnos una cuenta en la pagina de **Expo**
+- Debemos descargarnos Android Studio y instalamos un SDK
+- Debemos crearnos una cuenta en la pagina de **Expo**
+- Debemos iniciar sesion en el equipo:
+```sh
+expo login
+# ingresamos usuario y pass
+
+```
 
 
