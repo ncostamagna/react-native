@@ -48,12 +48,14 @@ expo init miAplicacion
 - app.json: configuracion; nombre, plataformas disponibles, version, orientacion, icon, pantalla de carga (splash)
 
 ```json
-"ios":{
-    // configuracion para IOS
-},
-"android":{
-    // configuracion para Andproid
-    // por ejemplo, permisos de la aplicacion (camara, localicion, etc..)
+{
+    "ios":{
+        /* configuracion para IOS */
+    },
+    "android":{
+        /* configuracion para Andproid
+           por ejemplo, permisos de la aplicacion (camara, localicion, etc..) */
+    }
 }
 
 ```
