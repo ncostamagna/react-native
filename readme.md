@@ -34,4 +34,36 @@ expo login
 
 ```
 
+# Proyecto
 
+Crear una nueva aplicacion de React Native
+```sh
+expo init miAplicacion
+# Elegimos el template
+
+```
+
+- Assert: Va a ser donde vamos a añadir todas las imagenes
+- App.js: Lo primero que se va a ejecutar
+- app.json: configuracion; nombre, plataformas disponibles, version, orientacion, icon, pantalla de carga (splash)
+
+```json
+"ios":{
+    // configuracion para IOS
+},
+"android":{
+    // configuracion para Andproid
+    // por ejemplo, permisos de la aplicacion (camara, localicion, etc..)
+}
+
+```
+
+```sh
+npm start   # Ejecutar aplicacion
+# nos da un QR y lo escaneamos desde la App de expo
+
+
+npm android # Ejecutar en Android
+```
+
+Para subir el proyecto a **expo**, levantamos el servidor, damos click en **Publish or repulish project...** y lo publicamos. Para verlo vamos a *Profile* y vemos la aplicacion
