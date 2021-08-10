@@ -49,12 +49,15 @@ expo init miAplicacion
 
 <br />
 Configuracion para IOs
+
 ```json
 "ios":{
 
 }
 ```
+
 Configuracion para Android, por ejemplo, permisos de la aplicacion (camara, localicion, etc..) 
+
 ```json
 "android":{
 
