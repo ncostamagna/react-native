@@ -47,17 +47,18 @@ expo init miAplicacion
 - App.js: Lo primero que se va a ejecutar
 - app.json: configuracion; nombre, plataformas disponibles, version, orientacion, icon, pantalla de carga (splash)
 
+<br />
+Configuracion para IOs
 ```json
-{
-    "ios":{
-        /* configuracion para IOS */
-    },
-    "android":{
-        /* configuracion para Andproid
-           por ejemplo, permisos de la aplicacion (camara, localicion, etc..) */
-    }
-}
+"ios":{
 
+}
+```
+Configuracion para Android, por ejemplo, permisos de la aplicacion (camara, localicion, etc..) 
+```json
+"android":{
+
+}
 ```
 
 ```sh
