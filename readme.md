@@ -93,6 +93,8 @@ Debemos instalar el stack, vamos a tener diferentes stacks (paginas) y dentro da
 ```sh
 npm install @react-navigation/native-stack
 
+npm install @react-navigation/stack react-native-gesture-handler
+
 ```
 
 ## Tab Navegation

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import PaginaStack from './Pagina1Stack';
 import OtraPagina from '../screens/miOtraPagina';
 
@@ -18,16 +18,10 @@ export default function Navigation() {
                 title: "Pagina", tabBarBadge: 2
             }}/>
         <Tab.Screen 
-            name="other_page" 
-            component={OtraPagina}
+            name="otra-page" 
+            component={OtraPagina} 
             options={{
-                title: "Otra pagina"
-            }}/>
-        <Tab.Screen 
-            name="other_page_2" 
-            component={OtraPagina}
-            options={{
-                title: "Otra pagina"
+                title: "Otra Pagina", tabBarBadge: 2
             }}/>
       </Tab.Navigator>
     </NavigationContainer>
