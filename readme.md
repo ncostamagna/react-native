@@ -73,3 +73,32 @@ npm android # Ejecutar en Android
 ```
 
 Para subir el proyecto a **expo**, levantamos el servidor, damos click en **Publish or repulish project...** y lo publicamos. Para verlo vamos a *Profile* y vemos la aplicacion
+
+# React Navegation
+Nos va a permitir navegar entre las **Views**
+
+```sh
+npm install @react-navigation/native
+
+```
+
+Si trabajamos con expo debemos instalar lo siguiente
+
+```sh
+expo install react-native-screens react-native-safe-area-context
+```
+
+Debemos instalar el stack, vamos a tener diferentes stacks (paginas) y dentro da cada stack parias sub paginas
+
+```sh
+npm install @react-navigation/native-stack
+
+```
+
+## Tab Navegation
+Tab de navegacion
+
+```sh
+npm install @react-navigation/bottom-tabs
+
+```
