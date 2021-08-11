@@ -88,7 +88,7 @@ Si trabajamos con expo debemos instalar lo siguiente
 expo install react-native-screens react-native-safe-area-context
 ```
 
-Debemos instalar el stack, vamos a tener diferentes stacks (paginas) y dentro da cada stack parias sub paginas
+Debemos instalar el stack, vamos a tener diferentes stacks (paginas) y dentro da cada stack parias sub paginas. Con los Stack nos aparecera el titulo arriba y podemos navegar dentro de la misma pagina
 
 ```sh
 npm install @react-navigation/native-stack
@@ -101,4 +101,11 @@ Tab de navegacion
 ```sh
 npm install @react-navigation/bottom-tabs
 
+```
+
+# React Native Elements
+Ampliacion de los componentes que podemos utilizar, seria como un bootstrap
+
+```sh
+npm install react-native-elements
 ```
