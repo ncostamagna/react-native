@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {Icon} from "react-native-elements"
+
 import PaginaStack from './Pagina1Stack';
 import OtraPagina from '../screens/miOtraPagina';
 
@@ -10,7 +11,16 @@ const Tab = createBottomTabNavigator();
 export default function Navigation() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator
+        initialRouteName="page" //donde va a inicializar
+        tabBarOptions={{
+            inactiveTintColor: "#646464",
+            activeTintColor: "#00a680",
+        }}
+        screenOptions={({route}) => ({
+            tabBarIcon: ({color}) => screenOptions(route, color)
+        })}
+      >
         <Tab.Screen 
             name="page" 
             component={PaginaStack} 
@@ -26,4 +36,22 @@ export default function Navigation() {
       </Tab.Navigator>
     </NavigationContainer>
   );
+}
+
+function screenOptions(router, color){
+    let iconName;
+
+    switch(router.name) {
+        case "page":
+            iconName = "compass-outline";
+            break;
+        case "otra-page":
+            iconName = "heart-outline"
+        default:
+            break;
+    }
+
+    return (
+        <Icon type="material-community" name={iconName} size={22} color={color} />
+    )
 }

@@ -74,6 +74,9 @@ npm android # Ejecutar en Android
 
 Para subir el proyecto a **expo**, levantamos el servidor, damos click en **Publish or repulish project...** y lo publicamos. Para verlo vamos a *Profile* y vemos la aplicacion
 
+# Hooks
+https://github.com/ncostamagna/react#react-hooks
+
 # React Navegation
 Nos va a permitir navegar entre las **Views**
 
@@ -97,6 +100,36 @@ npm install @react-navigation/stack react-native-gesture-handler
 
 ```
 
+```xml
+<Tab.Navigator
+    initialRouteName="" //donde va a inicializar
+    tabBarOption={{
+        inactiveTintColor: "color cuando este inactivo",
+        activeTintColor: "color cuando esta activo",
+    }}
+    screenOptions={({route}) => ({
+        tabBarIcon: ({color}) => screenOptions(router, color)
+    })}
+>
+```
+```js
+function screenOptions(router, color){
+    let iconName;
+
+    switch(router.name) {
+        case "nombre-page":
+            iconName = "compass-outline";
+            break;
+        default:
+            break;
+    }
+
+    return (
+        <Icon type="material-community" name={iconName} size={22} color={color} />
+    )
+}
+```
+
 ## Tab Navegation
 Tab de navegacion
 
@@ -106,8 +139,12 @@ npm install @react-navigation/bottom-tabs
 ```
 
 # React Native Elements
-Ampliacion de los componentes que podemos utilizar, seria como un bootstrap
+Ampliacion de los componentes que podemos utilizar, seria como un bootstrap, podemos aplicar iconos
 
 ```sh
 npm install react-native-elements
 ```
+https://reactnativeelements.com/docs
+<br />
+https://materialdesignicons.com/
+<br />
